@@ -1,4 +1,14 @@
 const express = require('express');
 const app = express();
+//const router = express.Router();
 
-app.listen(3777, () => {console.log(`Running on port 3777`)});
+const PORT = 3777
+
+app.get('/',
+           (req,res) => {
+             console.log("WE HAVE ACHIEVED VICTORY!");
+             res.send("HELLO CSE341");
+           }
+          )
+
+app.listen(PORT, () => {console.log(`Running on port ${PORT}`)});
