@@ -1,0 +1,12 @@
+{
+  "name": "w01-contacts",
+  "version": "1.0.0",
+  "description": "CSE341 Week 01 Contacts Project Part 1.",
+  "license": "GPL-3.0-or-later",
+  "author": "hpoe",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

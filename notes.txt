@@ -1,0 +1,5 @@
+Requirements:
+1. Set up the project and database.
+2.   Import data into the database.
+3.  Complete the GET API routes (get and get all).
+4.  Deploy the app to Render.
