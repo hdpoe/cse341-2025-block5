@@ -1,7 +1,8 @@
 const express = require('express');
-const app = express();
-//const router = express.Router();
+const mongodb = require('./db/db');
 
+
+const app = express();
 const PORT = 3777
 
 app.get('/',
