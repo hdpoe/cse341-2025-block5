@@ -1,5 +1,27 @@
 Requirements:
-1. Set up the project and database.
-2.   Import data into the database.
-3.  Complete the GET API routes (get and get all).
-4.  Deploy the app to Render.
+DONE: 1. Set up the project
+2. Set up a database.
+   DONE: 2a. Setup the database in the cloud.
+   DONE: 2b. Setup the database in our app.
+DONE: 3. Import data into the database.
+4. Complete the GET API routes (get and get all).
+   4a. Complete the GET API route get
+   DONE: 4b. Complete the GET API route get all
+5. Deploy the app to Render.
+
+Requirements Project Week 02
+DONE: 1. Node Project needs to connect MongoDB.
+2. Functional CRUD Endpoints
+   2a. API GET endpoint that retrieves a single record from MongoDB.
+   2b. API POST endpoint that creates a record from MongoDB.
+   2c. API PUT endpoint that updates a record from MongoDB.
+   2d. API DELETE endpoint that deletes a record from MongoDB.
+   2e. API GET endpoint that retrieves all records fom MongoDB.
+3. Contact object in MongoDB that has the following attributes
+   - A key of firstName that has a value type of string.
+   - A key of lastName that has a value type of string.
+   - A key of email that has a value type of string.
+   - A key of favoriteColor that has a value type of string.
+   - A key of birthday that has a value type of string
+     - Figure out proper value type for birthday.
+4. Document the API using Swagger.
