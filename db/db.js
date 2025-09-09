@@ -1,4 +1,6 @@
 const MongoClient = require('mongodb').MongoClient;
+const dotenv = require('dotenv');
+dotenv.config();
 
 let database;
 
@@ -8,7 +10,7 @@ const initDb = (callback) => {
     callback(database);
   }
   console.log("Connecting to database");
-  MongoClient.connect('mongodb+srv://hpoe:<db_password>@cse341-demo.208kmf7.mongodb.net/').then((client) => {
+  MongoClient.connect(process.env.MONGODB_URL).then((client) => {
     console.log("Connected to the database");
     database = client;
     callback(null, database);
@@ -24,3 +26,8 @@ const getDatabase = () => {
   }
   return database;
 }
+
+module.exports = {
+  initDb,
+  getDatabase
+};
